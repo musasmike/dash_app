@@ -10,6 +10,7 @@ import plotly.express as px
 
 # Initialize the app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # Load the data
 spacex_df = pd.read_csv('https://raw.githubusercontent.com/musasmike/applied_data_science_capstone/main/data/spacex_launch_dash.csv')
