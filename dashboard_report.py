@@ -13,7 +13,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 
 # Load the data
-spacex_df = pd.read_csv('spacex_launch_dash.csv')
+spacex_df = pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/datasets/spacex_launch_geo.csv')
 # Launch Sites drop-down list
 launch_sites_list = list(spacex_df['Launch Site'].unique())
 launch_sites_list.insert(0, 'All Sites')
